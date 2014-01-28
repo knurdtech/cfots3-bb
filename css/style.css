@@ -18,8 +18,10 @@ flex: <number>; equivalent to '<number> 1 0px'. Makes the flex item flexible and
 */
 
 body { 
-  margin:100px auto;
+  /* margin:100px auto; */
   max-width: 80em;
+  color: #fff;
+  background-color: #333;
 }
 article, aside, figure, footer, header, hgroup, menu, nav, section { 
   display:block;
@@ -36,6 +38,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
 aside {
   border: solid blue;
   width: 16em;
+  text-align: center;
 }
 article h1 {
   margin-top: 0;
@@ -43,7 +46,19 @@ article h1 {
 aside img {
   flex-align: center; /* not doing anything */
 }
-@media all and (max-width: 700px) {
+@media all and (min-width: 699px) {
+  body {
+    margin: 50px auto 40px; /* top left/right bottom */
+  }
+  #content {
+    margin-left: 3em;
+    margin-right: 5em;
+  }
+  aside {
+    margin-left: 5em;
+  }
+}
+@media all and (max-width: 699px) {
   #main { flex-flow: column; }
   #content, aside { 
     order: 0;
