@@ -1,7 +1,7 @@
 body { 
   margin:auto;
   max-width: 80em;
-  background: #333;
+  background: #333 url(../images/767_background_1.png) repeat-y;
 }
 article, aside, figure, footer, header, hgroup, menu, nav, section { 
   display:block;
@@ -37,7 +37,7 @@ article h1 {
   margin-top: 40px;
   margin-left: 13px;
   color: #bbb;
-  background: #111;
+  /*background: #111;*/
 }
 h1 {
   color: #fff;
