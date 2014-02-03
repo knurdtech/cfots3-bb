@@ -18,10 +18,10 @@ flex: <number>; equivalent to '<number> 1 0px'. Makes the flex item flexible and
 */
 
 body { 
-  /* margin:100px auto; */
-  max-width: 80em;
-  color: #fff;
-  background-color: #333;
+  margin: 50px auto 40px; /* top left/right bottom */
+  max-width: 74em;
+  color: #fff; /* fff */
+  background-color: #333; /* 333 */
 }
 article, aside, figure, footer, header, hgroup, menu, nav, section { 
   display:block;
@@ -29,14 +29,16 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
 #main {
   display: flex;
 }
-#content {
-  border: solid red;
+.content {
   flex: 1;  /* Fills content to rest of container width */
   order: 1; /* Moves #content after aside */
   margin-left: 3em;
 }
+.content h1 {
+  color: #FCC20C;
+}
 aside {
-  border: solid blue;
+  background: url(../images/767_background_1.png) #000 repeat-y;
   width: 16em;
   text-align: center;
 }
@@ -46,23 +48,67 @@ article h1 {
 aside img {
   flex-align: center; /* not doing anything */
 }
+
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none; /* remove bullets */
+  min-width: min-content; /* Don't overflow */
+}
+/*nav a {
+  color: #fff;
+  text-decoration: none; /* remove underlines /
+  padding: 1em;
+  
+  background: #000;
+}*/
+
+a {
+  color: red;
+}
+
+/* http://devgrow.com/super-simple-css-buttons/ */
+.button {
+   padding: 5px 10px;
+   background: #666;
+   border: none;
+   color: white;
+   font-weight: bold;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   text-shadow: 1px 1px #555;
+   /*font-family: Georgia, serif;*/
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   background-position: 0 -48px;
+   }
+.button:active {
+   background-position: 0 top;
+   position: relative;
+   top: 1px;
+   padding: 6px 10px 4px;
+}
 @media all and (min-width: 699px) {
-  body {
-    margin: 50px auto 40px; /* top left/right bottom */
-  }
-  #content {
+  .content {
     margin-left: 3em;
-    margin-right: 5em;
+    margin-right: 4%;
   }
   aside {
-    margin-left: 5em;
+    margin-left: 4%;
   }
 }
 @media all and (max-width: 699px) {
   #main { flex-flow: column; }
-  #content, aside { 
+  .content, aside { 
     order: 0;
     width: auto;
     margin: auto;
+    background: none #333 no-repeat;
   }
 }

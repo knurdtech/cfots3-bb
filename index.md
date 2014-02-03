@@ -2,7 +2,6 @@
 layout: page
 title: CrossFit OTS3
 ---
-<section id="content" markdown="1">
 ![Kettlebells](images/kettlebells.jpg)
 
 # Welcome to CrossFit <span>OTS3</span>
@@ -29,4 +28,3 @@ We are a community gym, and inside it’s all sweat, barbells, kettle bells, pul
 Our Location
 <address>12073 Katy Road Suite 613 Keller, TX 76244</address>
 <img width="500px" height="350px" src="//placehold.it/500x350">
-</section> {% comment %} <!-- #content --> {% endcomment %}
