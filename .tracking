@@ -1,0 +1,31 @@
+Using some HTML5 tags and experimenting with flexbox
+
+Structure:
+body
+  nav
+  header
+  #main
+    #content
+      article
+      article
+    aside
+  footer
+
+body
+  .sf_outer_wrapper
+    .sf_wrapper
+      .sf_outer_wrapper_r5
+        .sf_wrapper_r5
+          .sf_region5 (670 x 310 kettlebells) {background-image: url(images/bg_lec8.jpg); float: right; height: 310px; width: 670px; margin-right: 25px;}
+      .sf_inner_wrapper
+        .sf_outer_wrapper_r6
+          .sf_wrapper_r6
+            .sf_region6 (270 x 1429) {float: left; width: 270px; margin-top: 40px; margin-left: 13px;}
+              .sf_main_header (270 x 839) p{ text-align: center; }
+              .sf_navigation (270 x 335)
+              .sf_pod (270 x 250)
+        .sf_outer_wrapper_r7
+          .sf_wrapper_r7
+            .sf_region7 (715 x 1218) {float: right; width: 695px; padding-right: 20px; margin-bottom: 20px;}
+              .sf_pagetitle (677 x 87)
+              .sf_content (695 x 1092)
