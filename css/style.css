@@ -105,7 +105,10 @@ a, .red {
   }
 }
 @media all and (max-width: 799px) {
-  #main { flex-flow: column; }
+  #main {
+    -moz-flex-flow: column;
+    flex-flow: column;
+  }
   .content, aside { 
     order: 0;
     width: auto;
@@ -113,6 +116,7 @@ a, .red {
     background: none #333 no-repeat;
   }
   nav ul {
+    -moz-flex-flow: column;
     flex-flow: column;
     min-height: 200px;
   }
