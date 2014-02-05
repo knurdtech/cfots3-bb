@@ -108,8 +108,9 @@ a, .red {
 }
 @media all and (max-width: 799px) {
   #main {
+    display: block;/* Trying this for Firefox
     -moz-flex-flow: column;
-    flex-flow: column;
+    flex-flow: column;*/
   }
   .content, aside { 
     order: 0;
@@ -118,8 +119,9 @@ a, .red {
     background: none #333 no-repeat;
   }
   nav ul {
+    display: block;/*
     -moz-flex-flow: column;
-    flex-flow: column;
+    flex-flow: column;*/
     min-height: 200px;
   }
   .content img {
