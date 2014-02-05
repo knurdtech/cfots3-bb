@@ -27,7 +27,7 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
   display:block;
 }
 #main {
-  display: -moz-box;
+  display: -moz-flex;
   display: flex;
 }
 .content {
@@ -56,7 +56,7 @@ aside p {
 }
 
 nav ul {
-  display: -moz-box;
+  display: -moz-flex;
   display: flex;
   justify-content: space-around;
 }
