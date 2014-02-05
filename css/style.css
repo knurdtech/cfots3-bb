@@ -121,8 +121,12 @@ a, .red {
   nav ul {
     display: block;/*
     -moz-flex-flow: column;
-    flex-flow: column;*/
-    min-height: 200px;
+    flex-flow: column;
+    min-height: 200px;*/
+    min-height: 0;
+  }
+  .button {
+    margin-bottom: 8px;
   }
   .content img {
     display: none;
