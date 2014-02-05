@@ -4,7 +4,7 @@ title: CrossFit OTS3
 ---
 ![Kettlebells](images/kettlebells.jpg)
 
-# Welcome to CrossFit <span>OTS3</span>
+# Welcome to CrossFit <span class="red">OTS3</span>
 
 Thank you for visiting our website. You are taking the first steps toward finding a home that will help you reach your fitness goals.
 

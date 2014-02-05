@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+![Kettlebells](images/kettlebells.jpg)
+
 # Getting Started
 
 Are you Interested? It’s really easy to get started. Anyone can do this.  You’ve already taken some time to read about us.   Maybe you’re just not sure you believe it, or not sure it’ll “feel” right in the gym. That’s perfectly understandable. Come on by and give it a try – nothing we say will make much sense until you do. 

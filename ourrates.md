@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+![Kettlebells](images/kettlebells.jpg)
+
 # Rates
 
 CrossFit OTS3 is a coaching facility, not a typical gym that you walk into and use on your own. The only time our members come in is during scheduled sessions when our coaches are running classes.

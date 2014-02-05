@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+![Kettlebells](images/kettlebells.jpg)
+
 # CrossFit OTS3 Facts
 
 Q: What is in a typical Class?

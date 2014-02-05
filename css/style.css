@@ -34,21 +34,25 @@ article, aside, figure, footer, header, hgroup, menu, nav, section {
   order: 1; /* Moves #content after aside */
   margin-left: 3em;
 }
-.content h1 {
+/*.content h1 {
   color: #FCC20C;
-}
+}*/
 aside {
   background: url(../images/767_background_1.png) #000 repeat-y;
-  width: 16em;
+  width: 295px;
+  /* width: 16em; */
   text-align: center;
+  margin-top: 1em;
+  
 }
 article h1 {
   margin-top: 0;
 }
-aside img {
-  flex-align: center; /* not doing anything */
-}
 
+aside p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
 
 nav ul {
   display: flex;
@@ -66,7 +70,7 @@ nav ul li {
   background: #000;
 }*/
 
-a {
+a, .red {
   color: red;
 }
 
@@ -94,21 +98,25 @@ a {
    top: 1px;
    padding: 6px 10px 4px;
 }
-@media all and (min-width: 699px) {
+@media all and (min-width: 800px) {
   .content {
     margin-left: 3em;
     margin-right: 4%;
   }
-  aside {
-    margin-left: 4%;
-  }
 }
-@media all and (max-width: 699px) {
+@media all and (max-width: 799px) {
   #main { flex-flow: column; }
   .content, aside { 
     order: 0;
     width: auto;
     margin: auto;
     background: none #333 no-repeat;
+  }
+  nav ul {
+    flex-flow: column;
+    min-height: 200px;
+  }
+  .content img {
+    display: none;
   }
 }
