@@ -1,4 +1,6 @@
 markdown: kramdown
 title: CrossFit OTS3
 
-development: /cfots3-bb
+# development: /cfots3-bb
+
+exclude: [sass, config.rb]
