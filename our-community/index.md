@@ -1,6 +1,5 @@
 ---
 layout: page
-title: CrossFit OTS3
 ---
 ![Kettlebells](/images/kettlebells.jpg)
 

@@ -1,6 +1,7 @@
 @import "compass";
 @import "partials/variables";
 @import "partials/normalize";
+@import "partials/topnav";
 
 // === Flex Values ===
 // flex: 0 auto;  same as initial (default) value
@@ -21,10 +22,12 @@
 //   to the specified flex factor. 
 
 body { 
-  margin: 50px auto 40px; /* top left/right bottom */
-  max-width: $L;
   color: $color-primary;
   background-color: $color-bg;
+}
+div[id="main"] {
+  max-width: $L;
+  margin: 50px auto 40px; /* top left/right bottom */
 }
 a, .red {
   color: red;
@@ -33,8 +36,39 @@ a, .red {
   img {
     display: none;
   }
-}
+} /*
 aside {
   text-align: center;
   margin-top: 1em;
+} */
+
+//
+// footer flex
+//
+footer {
+  display: flex;
+  p {
+    padding: 1em;
+    width: 20%;
+  }
+}
+
+@media (min-width: $M) {
+  .content {
+    img { 
+      display: block;
+    }
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    img {
+      width: 304px;
+      height: 540px;
+    }
+    article {
+      flex: 1;
+      margin: 1em 2em 1em 1em;
+    }
+  }
 }
