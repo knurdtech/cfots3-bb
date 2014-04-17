@@ -79,7 +79,7 @@ footer {
 }
 
 @media (max-width: $M - 1) {
-  footer p {
+  footer > p {
     display: none;
   }
 }
