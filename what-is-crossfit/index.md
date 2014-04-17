@@ -1,6 +1,8 @@
 ---
 layout: page
 ---
+![Kettlebells](../images/kettlebells.jpg)
+
 # What is CrossFit?
 
 CrossFit is a principal strength and conditioning program for many police academies and tactical operations teams, military special operations units, champion martial artists, and hundreds of other elite and professional athletes worldwide.

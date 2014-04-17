@@ -1,0 +1,112 @@
+body { 
+  margin: 50px auto 40px; /* top left/right bottom */
+  max-width: 74em;
+  color: #fff; $color-primary;
+  background-color: $color-bg;
+}
+#main {
+  display: -moz-flex;
+  display: flex;
+}
+.content {
+  flex: 1;  /* Fills content to rest of container width */
+  order: 1; /* Moves #content after aside */
+  margin-left: 3em;
+}
+/*.content h1 {
+  color: #FCC20C;
+}*/
+aside {
+  background: url(../images/767_background_1.png) #000 repeat-y;
+  width: 295px;
+  /* width: 16em; */
+  text-align: center;
+  margin-top: 1em;
+  
+}
+article h1 {
+  margin-top: 0;
+}
+
+aside p {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+nav ul {
+  display: -moz-flex;
+  display: flex;
+  justify-content: space-around;
+}
+nav ul li {
+  list-style: none; /* remove bullets */
+  min-width: min-content; /* Don't overflow */
+}
+/*nav a {
+  color: #fff;
+  text-decoration: none; /* remove underlines /
+  padding: 1em;
+  
+  background: #000;
+}*/
+
+a, .red {
+  color: red;
+}
+
+/* http://devgrow.com/super-simple-css-buttons/ */
+.button {
+   padding: 5px 10px;
+   background: #666;
+   border: none;
+   color: white;
+   font-weight: bold;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   text-shadow: 1px 1px #555;
+   /*font-family: Georgia, serif;*/
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   background-position: 0 -48px;
+   }
+.button:active {
+   background-position: 0 top;
+   position: relative;
+   top: 1px;
+   padding: 6px 10px 4px;
+}
+@media all and (min-width: 800px) {
+  .content {
+    margin-left: 3em;
+    margin-right: 4%;
+  }
+}
+@media all and (max-width: 799px) {
+  #main {
+    display: block;/* Trying this for Firefox
+    -moz-flex-flow: column;
+    flex-flow: column;*/
+  }
+  .content, aside { 
+    order: 0;
+    width: auto;
+    margin: auto;
+    background: none #333 no-repeat;
+  }
+  nav ul {
+    display: block;/*
+    -moz-flex-flow: column;
+    flex-flow: column;
+    min-height: 200px;*/
+    min-height: 0;
+  }
+  .button {
+    margin-bottom: 8px;
+  }
+  .content img {
+    display: none;
+  }
+}

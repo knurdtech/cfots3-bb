@@ -8,7 +8,6 @@
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
     </script>
   <![endif]-->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="{% if site.development %}{{ site.development }}{% endif %}/css/style.css" />
 </head>
 <body>

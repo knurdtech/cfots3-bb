@@ -1,11 +1,19 @@
 {% include head.html %}
 
 {% include topnav.html %}
+<div id="main" role="main">
 
 <section class="content">
 {{ content }}
 </section>
 
+{% comment %}
+<!-- Taking out the schedule (aside) from every page
+<aside>
 {% include sidebar.html %}
+</aside>
+-->
+{% endcomment %}
 
 {% include footer.html %}
+</div>

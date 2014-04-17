@@ -1,0 +1,74 @@
+@import "compass";
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/topnav";
+
+// === Flex Values ===
+// flex: 0 auto;  same as initial (default) value
+// flex: initial; equivalent to '0 1 auto' and sizes flex item based on 'width/height' properties
+//   Allows item to shrink but not grow. Makes the flex item inflexible when there is positive free
+//   space, but allows it to shrink to its minimum when there is insufficient space. The alignment
+//   abilities or ‘auto’ margins can be used to align flex items along the main axis. 
+// flex: auto;    equivalent to '1 1 auto' Sizes the item based on the ‘width’/‘height’ properties,
+//   but makes them fully flexible, so that they absorb any free space along the main axis. If all
+//   items are either ‘flex: auto’, ‘flex: initial’, or ‘flex: none’, any positive free space after
+//   the items have been sized will be distributed evenly to the items with ‘flex: auto’. 
+// flex: none;    equivalent to '0 0 auto'. This value sizes the item according to the ‘width’/‘height’
+//   properties, but makes the flex item fully inflexible. This is similar to ‘initial’, except that
+//   flex items are not allowed to shrink, even in overflow situations.
+// flex: <number>; equivalent to '<number> 1 0px'. Makes the flex item flexible and sets the flex basis
+//   to zero, resulting in an item that receives the specified proportion of the free space in the flex
+//   container. If all items in the flex container use this pattern, their sizes will be proportional
+//   to the specified flex factor. 
+
+body { 
+  color: $color-primary;
+  background-color: $color-bg;
+}
+div[id="main"] {
+  max-width: $L;
+  margin: 50px auto 40px; /* top left/right bottom */
+}
+a, .red {
+  color: red;
+}
+.content {
+  img {
+    display: none;
+  }
+} /*
+aside {
+  text-align: center;
+  margin-top: 1em;
+} */
+
+//
+// footer flex
+//
+footer {
+  display: flex;
+  p {
+    padding: 1em;
+    width: 20%;
+  }
+}
+
+@media (min-width: $M) {
+  .content {
+    img { 
+      display: block;
+    }
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    img {
+      width: 304px;
+      height: 540px;
+    }
+    article {
+      flex: 1;
+      margin: 1em 2em 1em 1em;
+    }
+  }
+}
