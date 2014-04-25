@@ -20,7 +20,7 @@ Even though I have had a successful career in the corporate world for over 15 ye
 * Nutrition Advisor, Advocare
 * Youth Sports Coach since 2004
 </article>
-<img src="/images/Coach_Jason.jpg" alt="Coach Jason" />
+<img src="/images/Coach_Jason.jpg" alt="Coach Jason" width="318" height="680" />
 </div>
 
 <div class="flex">
@@ -37,7 +37,7 @@ Since 2012 I have lost about 80 lbs. and I am still work in process.  I continue
 
 * CrossFit Level 1 Certified 2013
 </article>
-<img src="/images/Coach_Cheri.jpg" alt="Coach Cheri" />
+<img src="/images/Coach_Cheri.jpg" alt="Coach Cheri" width="315" height="420" />
 </div>
 
 <div class="flex">
@@ -56,5 +56,5 @@ So, with my spirits lifted from her encouragement I kept moving at MY pace. Ches
 
 Just a quick P.S. The same WOD nearly 3 years later can now be done in under 3 minutes but that day I was made to feel as if I was winning an Olympic Gold medal by ALL members. We all have a story. 16:23.
 </article>
-<img src="/images/Coach_Cookie.jpg" alt="Coach Cookie" />
+<img src="/images/Coach_Cookie.jpg" alt="Coach Cookie" width="304" height="540" />
 </div>

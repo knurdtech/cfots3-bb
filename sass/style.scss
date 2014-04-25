@@ -63,12 +63,17 @@ aside {
 //
 footer {
   display: flex;
-  align-items: center;
-  p {
-    padding: 1em;
-    width: 20%;
+  justify-content: space-between;
+  align-items: flex-start;
+  ul {
+    padding-left: 0;
+    li {
+      list-style-type: none;
+      ul li { padding-left: 1em;}
+    }
   }
 }
+.site-nav { order: 1;} .contact-info {order: 2;} .journal-logo {order: 3;}
 
 @media (min-width: $M) {
   .content {
@@ -79,19 +84,32 @@ footer {
   .flex {
     display: flex;
     align-items: center;
-    img {
+    /*img {
       width: 304px;
       height: 540px;
-    }
+    }*/
     article {
       flex: 1;
       margin: 1em 2em 1em 1em;
+    }
+    &:nth-child(even) {
+      img {
+        order: 1;
+      }
+      article {
+        order: 2;
+        margin: 1em 1em 1em 2em;
+      }
     }
   }
 }
 
 @media (max-width: $M - 1) {
-  footer > p {
-    display: none;
+  footer {
+    flex-flow: column;
+    ul {
+      padding-left: 1em;
+    }
   }
+  .contact-info {order: 1;} .site-nav {order: 2;}
 }
