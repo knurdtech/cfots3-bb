@@ -24,6 +24,17 @@
 body { 
   color: $color-primary;
   background-color: $color-bg;
+  & > header {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    & > h1 {
+      margin-bottom: 0;
+    }
+    & > p {
+      margin: 0;
+      padding: 0 0 0.5em 0;
+    }
+  }
 }
 div[id="main"] {
   max-width: $L;
