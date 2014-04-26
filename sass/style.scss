@@ -62,8 +62,10 @@ aside {
 // footer flex
 //
 footer {
+  background-color: #222;
+  padding-top: 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   ul {
     padding-left: 0;
