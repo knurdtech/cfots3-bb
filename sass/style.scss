@@ -25,12 +25,15 @@ body {
   color: $color-primary;
   background-color: $color-bg;
   & > header {
-    font-family: 'Raleway', sans-serif;
+    // font-family: 'Raleway', sans-serif;
     text-align: center;
     & > h1 {
-      margin-bottom: 0;
+      font-family: 'Transformers';
+      font-size: 2.4em;
+      margin-bottom: 0.5em;
     }
     & > p {
+      font-family: 'Transformers';
       margin: 0;
       padding: 0 0 0.5em 0;
     }
@@ -51,6 +54,12 @@ a, .red {
 .wodtogether_login_info, .class_checkin {
   color: #000;
 }
+.top_contact {
+  position: absolute;
+  top: 1em;
+  right: 4em;
+}
+
 
 /*
 aside {
@@ -111,6 +120,16 @@ footer {
     flex-flow: column;
     ul {
       padding-left: 1em;
+    }
+  }
+  header {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    .top_contact {
+      position: relative;
+      top: 0;
+      right: 0;
     }
   }
   .contact-info {order: 1;} .site-nav {order: 2;}
